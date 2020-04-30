@@ -1,4 +1,4 @@
-module github.com/mattn/goveralls
+module github.com/hunter-io/goveralls
 
 go 1.11
 
