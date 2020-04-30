@@ -326,7 +326,7 @@ func process() error {
 		jobID = circleCIJobID
 	} else if appveyorJobID := os.Getenv("APPVEYOR_JOB_ID"); appveyorJobID != "" {
 		jobID = appveyorJobID
-	} else if semaphorejobID := os.Getenv("SEMAPHORE_BUILD_NUMBER"); semaphorejobID != "" {
+	} else if semaphorejobID := os.Getenv("SEMAPHORE_WORKFLOW_ID"); semaphorejobID != "" {
 		jobID = semaphorejobID
 	} else if jenkinsjobID := os.Getenv("BUILD_NUMBER"); jenkinsjobID != "" {
 		jobID = jenkinsjobID
